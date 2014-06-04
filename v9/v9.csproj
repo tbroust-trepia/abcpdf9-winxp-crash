@@ -36,7 +36,7 @@
   <ItemGroup>
     <Reference Include="ABCpdf, Version=9.1.1.4, Culture=neutral, PublicKeyToken=a7a0b3f5184f2169, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\v9\ABCpdf.DLL</HintPath>
+      <HintPath>..\externals\v9\ABCpdf.DLL</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -52,7 +52,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy /y "$(SolutionDir)lib\v9\ABCpdf9-32.dll" "$(TargetDir)"</PostBuildEvent>
+    <PostBuildEvent>xcopy /y "$(SolutionDir)externals\v9\ABCpdf9-32.dll" "$(TargetDir)"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
