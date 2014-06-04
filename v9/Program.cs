@@ -9,6 +9,14 @@ namespace v9
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Creating a Doc");
+
+            using (var doc = new WebSupergoo.ABCpdf9.Doc())
+            {
+                // is it working ?
+            }
+
+            Console.WriteLine("OK");
         }
     }
 }
